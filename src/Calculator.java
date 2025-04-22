@@ -18,11 +18,11 @@ public class Calculator implements ActionListener {
 	Calculator(){
 		frame = new JFrame("Calculator");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(500,650);
+		frame.setSize(750,850);
 		frame.setLayout(null);
 		
 		textfield = new JTextField();
-		textfield.setBounds(50, 25, 300, 50);
+		textfield.setBounds(50, 25, 400, 50);
 		textfield.setFont(myFont); 
 		textfield.setEditable(false);
 		
@@ -32,8 +32,8 @@ public class Calculator implements ActionListener {
 		divButton = new JButton("/");
 		decButton = new JButton(".");
 		eqButton = new JButton("=");
-		delButton = new JButton("Delete");
-		clrButton = new JButton("Clear");
+		delButton = new JButton("Del");
+		clrButton = new JButton("Clr");
 		negButton = new JButton("(-)");
 		
 		functionButtons[0] = addButton;
@@ -57,13 +57,13 @@ public class Calculator implements ActionListener {
 			numberButtons[i].setFont(myFont);
 			numberButtons[i].setFocusable(false);
 		}
-		negButton.setBounds(50,430,100,50);
-		delButton.setBounds(150,430,100,50);
-		clrButton.setBounds(250,430,100,50);
-//		panel.setBackground(Color.GRAY);
+		negButton.setBounds(50,450,100,50);
+		delButton.setBounds(150,450,100,50);
+		clrButton.setBounds(250,450,100,50);
 		panel = new JPanel();
 		panel.setBounds(50, 100, 300, 300);
 		panel.setLayout(new GridLayout(4,4,10,10));
+		// panel.setBackground(Color.GRAY);
 		
 		frame.add(delButton);
 		frame.add(clrButton);
